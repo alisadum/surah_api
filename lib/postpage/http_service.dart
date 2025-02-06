@@ -8,7 +8,7 @@ class HttpService {
     Response res = await get(Uri.parse(apiURL));
 
     if (res.statusCode == 200) {
-      List<dynamic> json = jsonDecode(res.body); // API ini langsung mengembalikan List
+      List<dynamic> json = jsonDecode(res.body); 
       return json;
     } else {
       throw "Unable to retrieve data.";

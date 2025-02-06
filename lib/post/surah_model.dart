@@ -4,7 +4,7 @@ class Surah {
   final String arabicName;
   final int numberOfAyahs;
   final String revelationType;
-  final String description; // Tambah field deskripsi
+  final String description; 
 
   Surah({
     required this.number,
@@ -22,7 +22,7 @@ class Surah {
       arabicName: json['nama'] as String,
       numberOfAyahs: json['jumlah_ayat'] as int,
       revelationType: json['tempat_turun'] as String,
-      description: json['deskripsi'] as String, // Ambil deskripsi dari API
+      description: json['deskripsi'] as String, 
     );
   }
 }
